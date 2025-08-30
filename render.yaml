@@ -4,7 +4,8 @@ services:
   env: python
   region: frankfurt
   plan: free
-  pythonVersion: 3.11   # 🔹 add this line
+  runtime:
+    pythonVersion: 3.11
   buildCommand: "pip install -r requirements.txt"
   startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
   envVars:
