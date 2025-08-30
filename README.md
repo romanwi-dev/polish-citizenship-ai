@@ -1,1 +1,1 @@
-# polish-citizenship-ai/v2.git
+# polish-citizenship-ai
