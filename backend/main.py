@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+from backend.twilio_bot import router as wa_router
+app.include_router(wa_router)
 app = FastAPI()
 
 # allow frontend calls
